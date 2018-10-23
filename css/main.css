@@ -1,0 +1,120 @@
+/* =================== FONTS =================== */
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-BlackItalic.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Light.ttf");
+  font-weight: 300;
+}
+/* ============== GENERAL ============== */
+
+/* -------- Pre Loader -------- */
+.animsition-loading-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+[data-loader="ball-scale"] {
+  width: 50px;
+  height: 50px;
+  -webkit-animation: ball-scale infinite linear 0.75s;
+  -moz-animation: ball-scale infinite linear 0.75s;
+  -o-animation: ball-scale infinite linear 0.75s;
+  animation: ball-scale infinite linear 0.75s;
+  border-radius: 100%;
+  background-color: #e87528;
+}
+@-webkit-keyframes ball-scale {
+  0% {
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@-moz-keyframes ball-scale {
+  0% {
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@-o-keyframes ball-scale {
+  0% {
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes ball-scale {
+  0% {
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+/* ============== HEADER ============== */
+
+/* ============== Body Sections ============== */
+
+/* ============== SVG ============== */
+
+/* ============== MEDIA ============== */
+/* -------- 1200 * 991 * 768 * 575  -------- */
