@@ -1,16 +1,16 @@
 /* =================== FONTS =================== */
 @font-face {
-  font-family: 'FuturaBT';
+  font-family: FuturaBT;
   src: url("../fonts/FuturaBookfont.ttf");
   font-weight: 400;
 }
 @font-face {
-  font-family: 'FuturaBT';
+  font-family: FuturaBT;
   src: url("../fonts/FuturaHeavyfont.ttf");
   font-weight: 700;
 }
 @font-face {
-  font-family: 'KBDunkTank';
+  font-family: KBDunkTank;
   src: url("../fonts/KBDunkTank.ttf");
   font-weight: 400;
 }
@@ -44,13 +44,13 @@ ul {
   margin: 0;
   list-style: none;
 }
-p {
+p,
+h1 {
   margin: 0px;
 }
 img {
   width: 100%;
 }
-
 /* -------- Pre Loader -------- */
 .animsition-loading-1 {
   position: absolute;
@@ -141,8 +141,96 @@ img {
   }
 }
 /* ============== HEADER ============== */
+.header{
+  background: url(../images/header-bg.png) #e75239 ;
+  padding-top: 40px;
+  padding-bottom: 200px;
+}
+.logo{
+  position: relative;
+  background: url('../images/logo-bg.svg') no-repeat;
+  background-size: 300px;
+  min-height: 215px;
+}
+.logo a{
+  padding-left: 30px;
+  padding-top: 20px;
+}
 #logo-svg {
   width: 233px;
+}
+.menu ul {
+  background: #fff;
+  padding: 5% 7%;
+  float: right;
+  -webkit-box-shadow: -10px 10px 0px 3px #000000;
+  box-shadow: -10px 10px 0px 3px #000000;
+}
+.menu li {
+  float: left;
+  margin: 0 15px;
+}
+.menu li:first-child {
+  margin-left: 0;
+}
+.menu li:last-child {
+  margin-right: 0;
+}
+.menu li a {
+  color: #0e0e0e;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px 0;
+}
+.header-content{
+  position: relative;
+}
+.header-content-contanier{
+  z-index: 2;
+  padding-bottom: 40px;
+}
+.border-box{
+  position: absolute;
+  width: 55%;
+  height: 70%;
+  border: 20px solid #000;
+  background: transparent;
+  right: 0;
+  bottom: -55px;
+  z-index: 0;
+}
+.bg-content{
+  position: absolute;
+  width: 95%;
+  height: 53%;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  z-index: 1;
+  -webkit-box-shadow: 10px 10px 40px 5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 10px 10px 40px 5px rgba(0,0,0,0.4);
+  box-shadow: 10px 10px 40px 5px rgba(0,0,0,0.4);
+}
+.left-content{
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 40px;
+}
+.left-content h1{
+  font-family: 'KBDunkTank';
+  font-size: 130px;
+  line-height: 1;
+  color: #df4d33;
+  margin-left: auto;
+}
+.left-content h1 span{
+  font-size: 38px;
+  display: block;
+  color: #1d1d1d;
+}
+.right-content img{
+  max-width: 525px;
 }
 /* ============== Body Sections ============== */
 
@@ -150,3 +238,8 @@ img {
 
 /* ============== MEDIA ============== */
 /* -------- 1200 * 991 * 768 * 575  -------- */
+@media (max-width:1100px){
+  .menu li{
+    margin: 0 10px;
+  }
+}
