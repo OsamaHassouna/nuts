@@ -373,8 +373,67 @@ img {
 /* ============== Brands ============== */
 .brands{
   background: url(../images/header-bg.svg) #e75239;
-  padding-top: 40px;
-  padding-bottom: 200px;
+  padding: 120px 0;
+}
+.brands-board{
+  background: #e75239;
+  padding: 70px 0;
+  -webkit-box-shadow: 5px 10px 40px 5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 5px 10px 40px 5px rgba(0,0,0,0.4);
+  box-shadow: 5px 10px 40px 5px rgba(0,0,0,0.4);
+}
+.brands-list{
+  display: inline-block;
+  width: 100%;
+}
+.brands-list li{
+  float: left;
+  margin-bottom: 100px;
+}
+.brands-list li:nth-child(7),
+.brands-list li:nth-child(8),
+.brands-list li:last-child{
+  margin-bottom: 0px;
+}
+.brands-icon{
+  max-width: 160px;
+  margin: 0 auto 15px;
+  height: 123px;
+  display: flex;
+  align-items: flex-end;
+}
+.brands-name{
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+.brands-name p{
+  line-height: 1.2;
+}
+.brands-name span{
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+.brands-icon.strategy,
+.brands-icon.develop{
+  width: 145px;
+}
+.brands-icon.seo{
+  width: 77px;
+}
+.brands-icon.optimization{
+  width: 66px;
+}
+.brands-icon.planning{
+  width: 91px;
+}
+.brands-icon.leads{
+  width: 110px;
+}
+.brands-icon.email,
+.brands-icon.mobile{
+  width: 132px;
 }
 /* ============== SVG ============== */
 
