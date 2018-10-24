@@ -45,7 +45,8 @@ ul {
   list-style: none;
 }
 p,
-h1 {
+h1,
+h2 {
   margin: 0px;
 }
 img {
@@ -233,7 +234,117 @@ img {
   max-width: 525px;
 }
 /* ============== Body Sections ============== */
-
+/* ============== What We Do ============== */
+.what-we-do{
+  position: relative;
+  padding: 150px 0;
+  background: url('../images/stars.svg') #0f0f0f;
+  /* background-color: #0f0f0f; */
+}
+.icon-planet{
+  position: absolute;
+  width: 263px;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+}
+.wwd-container{
+  position: relative;
+}
+.title-container{
+  transform: rotate(7Deg);
+}
+.wwd-title{
+  margin: 0 auto 30px;
+  max-width: 405px;
+  position: relative;
+}
+.wwd-title h2{
+  position: absolute;
+  left:30px;
+  top: 77px;
+  width: 80%;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 1;
+  color: #1d1d1d;
+  text-transform: uppercase;
+  z-index: 2;
+  text-align: center;
+}
+.wwd-title h2 span{
+  color: #e55139;
+}
+#title-quote-svg{
+  fill: #fff;
+}
+.left-quote,
+.right-quote{
+  position: absolute;
+  width: 55px;
+}
+.left-quote{
+  bottom: 50px;
+  left: 0;
+  transform: rotate(155Deg);
+}
+.right-quote{
+  right: 0;
+  top: -10px;
+  transform: rotate(-55Deg);
+}
+.wwd-text{
+  text-align: center;
+  margin-bottom: 90px;
+}
+.wwd-text p{
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+.wwd-text p:last-of-type{
+  margin-bottom: 70px;
+}
+.wwd-text h4{
+  font-weight: 700;
+  font-size: 27px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.logo-face{
+  width: 65px;
+  position: absolute;
+  left: 125px;
+  top: 0;
+  z-index: 2;
+}
+.your-brand{
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.left-brand{
+  font-size: 32px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
+  color: #707070;
+  height: 55px;
+  float: left;
+  margin-right: 43px;
+}
+.right-brand{
+  font-size: 44px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
+  height: 55px;
+  display: inline-block;
+  padding-top: 20px;
+}
 /* ============== SVG ============== */
 
 /* ============== MEDIA ============== */
