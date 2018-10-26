@@ -38,20 +38,29 @@
                 <header class='header'>
                     <div class='container'>
                         <!-- Navigation -->
-                        <div class='row no-gutters'>
+                        <div class='row navbar navbar-expand-lg no-gutters'>
                             <!-- Logo -->
-                            <div class='logo col-4'>
+                            <div class='logo col-lg-4 col-sm-8'>
                                 <a href='#' draggable="false">
                                     <svg viewBox="0 0 1302.61 513.34" id="logo-svg">
                                         <use xlink:href="#logo"></use>
                                     </svg>
                                 </a>
                             </div>
+                            <!-- mobile Button -->
+                            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent'
+                            aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                                <span class='navbar-toggler-icon'>
+                                    <svg viewBox="0 0 448 512" id="mobile-bars">
+                                        <use xlink:href="#bars"></use>
+                                    </svg>
+                                </span>
+                            </button>
                             <!-- Menu -->
-                            <div class='wrap_menu col-8'>
+                            <div class='wrap_menu navbar-collapse collapse col-lg-8 col-sm-12' id='navbarSupportedContent'>
                                 <div class='main-menu'>
                                     <nav class='menu'>
-                                        <ul>
+                                        <ul class="navbar-nav">
                                             <li>
                                                 <a href='#'>About Us</a>
                                             </li>
@@ -72,14 +81,6 @@
                                             </li>
                                         </ul>
                                     </nav>
-                                </div>
-                            </div>
-                            <!-- Mobile menu Hamburger Button -->
-                            <div class='btn-show-menu'>
-                                <div class='btn-show-menu-mobile hamburger hamburger--squeeze'>
-                                    <span class='hamburger-box mobile-menu'>
-                                        <span class='hamburger-inner'></span>
-                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -134,30 +135,28 @@
                                     </div>
                                 </div>
                                 <div class="row no-gutters justify-content-center">
-                                    <div class="col-4">
                                         <div class="your-brand">
                                             <p class="left-brand">Your</p>
                                             <p class="right-brand">Brand</p>
+                                            <div class="logo-face">
+                                                <img src="images/logo-face.svg" alt="logo face">
+                                            </div>
+                                            <div class="icon-heart">
+                                                <svg viewBox="0 0 51.16 74.52" id="icon-heart-svg">
+                                                    <use xlink:href="#icon-heart"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="icon-like">
+                                                <svg viewBox="0 0 68.2 103.58" id="icon-like-svg">
+                                                    <use xlink:href="#icon-like"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="icon-xD">
+                                                <svg viewBox="0 0 51.49 75.28" id="icon-xD-svg">
+                                                    <use xlink:href="#icon-xD"></use>
+                                                </svg>
+                                            </div>
                                         </div>
-                                        <div class="logo-face">
-                                            <img src="images/logo-face.svg" alt="logo face">
-                                        </div>
-                                        <div class="icon-heart">
-                                            <svg viewBox="0 0 51.16 74.52" id="icon-heart-svg">
-                                                <use xlink:href="#icon-heart"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="icon-like">
-                                            <svg viewBox="0 0 68.2 103.58" id="icon-like-svg">
-                                                <use xlink:href="#icon-like"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="icon-xD">
-                                            <svg viewBox="0 0 51.49 75.28" id="icon-xD-svg">
-                                                <use xlink:href="#icon-xD"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +173,7 @@
                         <div class="row no-gutters">
                             <div class="col-12 brands-board">
                                 <ul class="brands-list no-gutters">
-                                    <li class="col-4">
+                                    <li class="col-sm-12 col-md-6 col-lg-4">
                                         <div class="brands-icon socialmedia">
                                             <img src="images/brands/brand-socialmedia.svg" alt="brand socialmedia">
                                         </div>
@@ -182,7 +181,7 @@
                                             <p>Social Media <br>Marketing</p>
                                         </div>
                                     </li>
-                                    <li class="col-4">
+                                    <li class="col-sm-12 col-md-6 col-lg-4">
                                         <div class="brands-icon strategy">
                                             <img src="images/brands/brand-strategy.svg" alt="brand Strategy">
                                         </div>
@@ -190,7 +189,7 @@
                                             <p>Strategy<br>& Planning</p>
                                         </div>
                                     </li>
-                                    <li class="col-4">
+                                    <li class="col-sm-12 col-md-6 col-lg-4">
                                         <div class="brands-icon develop">
                                             <img src="images/brands/brand-develop.svg" alt="brand develop">
                                         </div>
@@ -199,7 +198,7 @@
                                                 </p>
                                         </div>
                                     </li>
-                                    <li class="col-4">
+                                    <li class="col-sm-12 col-md-6 col-lg-4">
                                         <div class="brands-icon seo">
                                             <img src="images/brands/brand-SEO.svg" alt="brand SEO">
                                         </div>
@@ -207,7 +206,7 @@
                                             <p>SEO Marketing<span>(SEO,PPC Campaigns)</span></p>
                                         </div>
                                     </li>
-                                    <li class="col-4">
+                                    <li class="col-sm-12 col-md-6 col-lg-4">
                                         <div class="brands-icon optimization">
                                             <img src="images/brands/brand-optimization.svg" alt="brand optimization">
                                         </div>
@@ -215,7 +214,7 @@
                                             <p>Measurement<br>& Optimization</p>
                                         </div>
                                     </li>
-                                    <li class="col-4">
+                                    <li class="col-sm-12 col-md-6 col-lg-4">
                                         <div class="brands-icon planning">
                                             <img src="images/brands/brand-planning.svg" alt="brand planning">
                                         </div>
@@ -223,7 +222,7 @@
                                             <p>Media Planning<br>& Buying</p>
                                         </div>
                                     </li>
-                                    <li class="col-4">
+                                    <li class="col-sm-12 col-md-6 col-lg-4">
                                         <div class="brands-icon email">
                                             <img src="images/brands/brand-email.svg" alt="brand email">
                                         </div>
@@ -231,7 +230,7 @@
                                             <p>E-mail<br>Marketing</p>
                                         </div>
                                     </li>
-                                    <li class="col-4">
+                                    <li class="col-sm-12 col-md-6 col-lg-4">
                                         <div class="brands-icon mobile">
                                             <img src="images/brands/brand-mobile.svg" alt="brand mobile">
                                         </div>
@@ -239,7 +238,7 @@
                                             <p>Mobile<br>Advertising </p>
                                         </div>
                                     </li>
-                                    <li class="col-4">
+                                    <li class="col-sm-12 col-md-6 col-lg-4">
                                         <div class="brands-icon leads">
                                             <img src="images/brands/brand-leads.svg" alt="brand Leads">
                                         </div>
@@ -385,6 +384,9 @@
                 <circle class="cls-11" cx="183.92" cy="200.27" r="12.42" />
                 <circle class="cls-5" cx="188.22" cy="198.36" r="5.25" />
             </g>
+        </g>
+        <g id="bars" data-name="bars">
+            <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
         </g>
         <g id="title-quote" data-name="title Quote">
             <g id="Isolation_Mode" data-name="Isolation Mode">

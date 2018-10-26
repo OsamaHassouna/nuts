@@ -160,6 +160,26 @@ img {
 #logo-svg {
   width: 233px;
 }
+.main-menu{
+  width: 100%;
+}
+.navbar{
+  padding: 0;
+  align-items: flex-start;
+}
+#mobile-bars {
+  color: #fff;
+}
+.navbar-toggler {
+  margin-top: 35px;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #0f0f0f;
+  padding: 5px 10px 9px;
+}
+.navbar-toggler:focus {
+  outline: none;
+}
 .menu ul {
   background: #fff;
   padding: 5% 7%;
@@ -251,9 +271,6 @@ img {
 .wwd-container{
   position: relative;
 }
-.title-container{
-  transform: rotate(7Deg);
-}
 .wwd-title{
   margin: 0 auto 30px;
   max-width: 405px;
@@ -312,17 +329,10 @@ img {
   max-width: 80%;
   margin: 0 auto;
 }
-.logo-face{
-  width: 65px;
-  position: absolute;
-  left: 125px;
-  top: 0;
-  z-index: 2;
-}
 .your-brand{
-  max-width: 300px;
-  margin: 0 auto;
+  width: 300px;
   padding: 50px 0;
+  position: relative;
 }
 .left-brand{
   font-size: 32px;
@@ -345,23 +355,30 @@ img {
   display: inline-block;
   padding-top: 20px;
 }
+.logo-face{
+  width: 65px;
+  position: absolute;
+  left: 80px;
+  top: 0;
+  z-index: 2;
+}
 .icon-heart{
   width: 17px;
   position: absolute;
   top: 40px;
-  right: 70px;
+  right: 25px;
 }
 .icon-like{
   width: 31px;
   position: absolute;
   top: 10px;
-  right: 110px;
+  right: 65px;
 }
 .icon-xD{
   width: 16px;
   position: absolute;
   top: 45px;
-  right: 155px;
+  right: 110px;
 }
 .section-arrow {
   width: 86px;
@@ -389,6 +406,7 @@ img {
 .brands-list li{
   float: left;
   margin-bottom: 100px;
+  min-height: 182px;
 }
 .brands-list li:nth-child(7),
 .brands-list li:nth-child(8),
@@ -442,5 +460,67 @@ img {
 @media (max-width:1100px){
   .menu li{
     margin: 0 10px;
+  }
+}
+@media (min-width:992px){
+  .navbar-expand-lg{
+    align-items: flex-start;
+    padding: 0;
+  }
+}
+@media (max-width:992px){
+  .brands-board{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .brands-list li:nth-child(7),
+  .brands-list li:nth-child(8){
+    margin-bottom: 100px;
+  }
+  .menu ul{
+    float: none;
+  }
+  .menu li {
+    margin: 0px;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .menu li:last-child {
+    padding-bottom: 0;
+  }
+  .wrap_menu{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .main-menu {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 650px) {
+  .logo{
+    background-size: 250px;
+    max-width: 250px;
+    min-height: 200px;
+  }
+  .logo a {
+    padding-left: 25px;
+    padding-top: 15px;
+  }
+  #logo-svg {
+    width: 200px;
+  }
+  .wrap_menu{
+    margin-top: 0px;
+  }
+}
+@media (max-width:420px){
+  .title-container{
+    max-width: 325px;
+    margin: 0 auto;
+  }
+  .wwd-title h2{
+    top: 62px;
+    font-size: 32px;
   }
 }
