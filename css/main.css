@@ -471,7 +471,7 @@ img {
 .icon-earth{
   position: absolute;
   width: 30%;
-  bottom: -100px;
+  bottom: -5%;
   left: 30px;
   z-index: -1;
   transform: rotate(35Deg);
@@ -482,6 +482,7 @@ img {
   width: 35%;
   bottom: 0;
   right: 0;
+  z-index: -1;
 }
 .ow-title{
   display: flex;
@@ -619,6 +620,20 @@ img {
     width: 90%;
     margin: 0 auto;
   }
+  .icon-plane{
+    width: 50%;
+  }
+  .ow-title{
+    display: inline-block;
+    width: 100%;
+  }
+  .ow-title .title-container{
+    margin: 0 auto 30px;
+  }
+  .ow-title h3{
+    margin: 0;
+    text-align: center;
+  }
 }
 @media (max-width: 650px) {
   .logo{
@@ -637,13 +652,22 @@ img {
     margin-top: 0px;
   }
 }
+@media (max-width:575px){
+  .icon-earth{
+    width: 40%;
+  }
+}
 @media (max-width:420px){
   .wwd-title .title-container{
     max-width: 325px;
     margin: 0 auto;
   }
   .wwd-title h2{
-    top: 62px;
+    top: 50px;
     font-size: 32px;
+  }
+  .ow-title .title-container h2{
+    top: 63px;
+    font-size: 45px;
   }
 }
