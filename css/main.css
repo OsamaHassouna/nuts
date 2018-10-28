@@ -659,7 +659,7 @@ img {
 }
 .icon-ufo {
   position: absolute;
-  top: -70px;
+  top: -40px;
   left: 0;
   width: 70%;
   z-index: -1;
@@ -690,7 +690,7 @@ img {
 .footer-title .title-container1 h2{
   position: absolute;
   top: 80px;
-  left: 60px;
+  left: 55px;
   font-weight: 700;
   font-size: 38px;
   line-height: 1;
@@ -771,6 +771,65 @@ img {
 .form-button:focus{
   outline: none;
 }
+.contact-us .right-content{
+  margin-left: 45px;
+}
+.map{
+  max-width: 443px;
+  margin-left: auto;
+  margin-bottom: 45px;
+}
+.social-media{
+  margin-bottom: 30px;
+}
+.social-media li {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+.social-media li:last-child{
+  margin-right: 0;
+}
+.social-media li a {
+  width: 100%;
+}
+.contact-info{
+  position: relative;
+  padding-top: 20px;
+}
+.contact-info:before{
+  content: '';
+  width: 56px;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+.contact-info li{
+  margin-bottom: 20px;
+}
+.contact-info li:last-child{
+  margin-bottom: 0;
+}
+#address-svg,
+#phone-svg,
+#email-svg{
+  fill: #fff;
+}
+.contact-icon{
+  width: 13px;
+  margin-right: 15px;
+  float: left;
+  line-height: 1.2;
+}
+.contact-text{
+  line-height: 1.2;
+  font-size: 14px;
+  max-width: 90%;
+  color: #ddd;
+}
 .copy-writes{
   text-align: center;
   padding: 100px 0 50px;
@@ -829,6 +888,7 @@ img {
   .icon-plane{
     width: 50%;
     bottom: -100px;
+    max-width: 350px;
   }
   .ow-title{
     display: inline-block;
@@ -843,6 +903,38 @@ img {
   }
   .icon-trees{
     bottom: -50px;
+  }
+  .contact-us .right-content{
+    margin-left: 0;
+  }
+  .left-form{
+    margin-bottom: 80px;
+  }
+  .map{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .right-content img{
+    max-width: 100%;
+  }
+  .social-media,
+  .contact-info{
+    text-align: center;
+  }
+  .contact-info:before{
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contact-info{
+    padding-top: 30px;
+  }
+  .contact-info ul{
+    display: inline-block;
+  }
+  .contact-info li{
+    text-align: left;
   }
 }
 @media (max-width: 769px){
