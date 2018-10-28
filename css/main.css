@@ -584,7 +584,6 @@ img {
 /* ============== Our Clients ============== */
 .our-clients{
   background: url('../images/header-bg.png');
-  /* background-size: cover; */
   padding: 140px 0 100px;
 }
 .oc-title{
@@ -618,6 +617,9 @@ img {
 .client-container img{
   border-radius: 50%;
 }
+.item-slick{
+  text-align: center;
+}
 .slick-list {
   padding-bottom: 40px;
 }
@@ -634,6 +636,151 @@ img {
 .slick-dots li.slick-active button:before{
   color: #fff;
   opacity: 1;
+}
+/* ============== Footer ============== */
+.footer{
+  padding-top: 85px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  background: url('../images/stars.svg') #0f0f0f;
+}
+.tree-copy{
+  position: relative;
+}
+.icon-trees{
+  position: absolute;
+  bottom: -180px;
+  width: 130%;
+  /* height: 100%; */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.icon-ufo {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  width: 70%;
+  z-index: -1;
+}
+.icon-spot{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: -2;
+}
+.footer-title{
+  margin-bottom: 50px;
+}
+.footer-title .title-container1{
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  margin-right: 30%;
+}
+.footer-title .title-container2{
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+  margin-left: 30%;
+}
+.footer-title .title-container1 h2{
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1;
+  color: #0f0f0f;
+  text-transform: uppercase;
+  z-index: 2;
+  text-align: center;
+}
+.footer-title .title-container1 h2 span{
+  color: #e75239;
+}
+.footer-title .title-container2 img{
+  transform: rotateY(180Deg) rotate(7Deg);
+}
+.footer-title .title-container2 h2{
+  position: absolute;
+  top: 52px;
+  left: 38px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 1;
+  color: #0f0f0f;
+  text-transform: uppercase;
+  z-index: 2;
+  text-align: center;
+}
+.contact-us {
+  margin-bottom: 400px;
+}
+.left-form{
+  background: #fff;
+  padding: 35px;
+  max-width: 685px;
+  margin: 0 auto;
+}
+.left-form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #c3c3c3;
+  color: #555;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+.left-form input:last-of-type{
+  margin-bottom: 40px;
+}
+.left-form input::placeholder{
+  color: #d3d3d3;
+}
+.left-form textarea::placeholder{
+  color: #a9a9a9;
+}
+.left-form textarea {
+  resize: none;
+  width: 100%;
+  border: none;
+  background: #fbfbfb;
+  min-height: 250px;
+  color: #555;
+  padding: 15px;
+  outline: none;
+  margin-bottom: 30px;
+}
+.form-button {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 15px 0;
+  background: #e75239;
+  color: #fff;
+  cursor: pointer;
+}
+.form-button:focus{
+  outline: none;
+}
+.copy-writes{
+  text-align: center;
+  padding: 100px 0 50px;
+  background: #a62510;
+}
+.copy-writes p{
+  font-size: 13px;
+  color: #ddd;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 /* ============== MEDIA ============== */
 /* -------- 1200 * 992 * 769 * 576  -------- */
@@ -681,6 +828,7 @@ img {
   }
   .icon-plane{
     width: 50%;
+    bottom: -100px;
   }
   .ow-title{
     display: inline-block;
@@ -692,6 +840,17 @@ img {
   .ow-title h3{
     margin: 0;
     text-align: center;
+  }
+  .icon-trees{
+    bottom: -50px;
+  }
+}
+@media (max-width: 769px){
+  .left-form{
+    max-width: 90%;
+  }
+  .icon-planet{
+    top: -100px;
   }
 }
 @media (max-width: 650px) {
@@ -709,6 +868,13 @@ img {
   }
   .wrap_menu{
     margin-top: 0px;
+  }
+  .icon-ufo,
+  .icon-spot{
+    display: none;
+  }
+  .icon-trees{
+    bottom: 0px;
   }
 }
 @media (max-width:575px){
@@ -728,5 +894,8 @@ img {
   .ow-title .title-container h2{
     top: 63px;
     font-size: 45px;
+  }
+  .icon-trees{
+    bottom: 50px;
   }
 }
