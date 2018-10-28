@@ -148,7 +148,7 @@ img {
 }
 /* ============== HEADER ============== */
 .header{
-  background: url(../images/header-bg.svg) #e75239;
+  background: url(../images/header-bg.png);
   padding-top: 40px;
   padding-bottom: 200px;
 }
@@ -397,7 +397,7 @@ img {
 }
 /* ============== Brands ============== */
 .brands{
-  background: url(../images/header-bg.svg) #e75239;
+  background: url(../images/header-bg.png);
   padding: 120px 0;
 }
 .brands-board{
@@ -590,6 +590,9 @@ img {
   .navbar-expand-lg{
     align-items: flex-start;
     padding: 0;
+  }
+  .slider-item a{
+    margin: 0 15px 15px;
   }
 }
 @media (max-width:992px){
