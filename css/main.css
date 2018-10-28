@@ -581,8 +581,62 @@ img {
 .next-slick #slider-arrow-svg{
   transform: rotate(270Deg);
 }
+/* ============== Our Clients ============== */
+.our-clients{
+  background: url('../images/header-bg.png');
+  /* background-size: cover; */
+  padding: 140px 0 100px;
+}
+.oc-title{
+  margin-bottom: 70px;
+}
+.oc-title .title-container{
+  position: relative;
+  max-width: 325px;
+  z-index: 1;
+  margin: 0 auto;
+}
+.oc-title h2{
+  z-index: 2;
+  position: absolute;
+  top: 30px;
+  left: 77px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1;
+  color: #0f0f0f;
+  text-transform: uppercase;
+  max-width: 50%;
+  text-align: center;
+}
+.oc-title h2 span{
+  color: #e75239;
+}
+.client-container{
+  width: 172px;
+}
+.client-container img{
+  border-radius: 50%;
+}
+.slick-list {
+  padding-bottom: 40px;
+}
+.slick-dots li{
+  margin: 0;
+  outline: none;
+}
+.slick-dots li button{
+  padding: 0;
+}
+.slick-dots li button:before{
+  color: #fff;
+}
+.slick-dots li.slick-active button:before{
+  color: #fff;
+  opacity: 1;
+}
 /* ============== MEDIA ============== */
-/* -------- 1200 * 991 * 768 * 575  -------- */
+/* -------- 1200 * 992 * 769 * 576  -------- */
 @media (max-width:1100px){
   .menu li{
     margin: 0 10px;
