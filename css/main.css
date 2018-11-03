@@ -867,6 +867,9 @@ img {
   }
 }
 @media (max-width:992px){
+  .left-content{
+    padding-bottom: 4%;
+  }
   .brands-board{
     max-width: 80%;
     margin: 0 auto;
@@ -905,6 +908,9 @@ img {
   }
   .ow-title .title-container{
     margin: 0 auto 30px;
+  }
+  .slider-arrows{
+    margin-top: 0px;
   }
   .ow-title h3{
     margin: 0;
@@ -947,11 +953,24 @@ img {
   }
 }
 @media (max-width: 769px){
+  .left-content{
+    padding-bottom: 0px;
+  }
+  .left-content h1{
+    font-size: 90px;
+  }
+  .left-content h1 span{
+    font-size: 30px;
+  }
   .left-form{
     max-width: 90%;
+    margin-bottom: 40px;
   }
   .icon-planet{
     top: -100px;
+  }
+  .contact-us{
+    margin-bottom: 250px;
   }
 }
 @media (max-width: 650px) {
@@ -970,7 +989,14 @@ img {
   .wrap_menu{
     margin-top: 0px;
   }
-  .icon-ufo,
+  .border-box{
+    bottom: -30px;
+  }
+  .icon-ufo {
+    top: -16px;
+    width: 90%;
+    left: -50px;
+  }
   .icon-spot{
     display: none;
   }
@@ -979,8 +1005,23 @@ img {
   }
 }
 @media (max-width:575px){
+  .icon-trees{
+    bottom: 50px;
+  }
   .icon-earth{
     width: 40%;
+  }
+  .icon-ufo {
+    width: 100%;
+    left: -50px;
+  }
+  .our-work{
+    padding: 80px 0 180px;
+  }
+}
+@media (max-width: 455px){
+  .footer-title{
+    margin-bottom: 10px;
   }
 }
 @media (max-width:420px){
@@ -997,6 +1038,9 @@ img {
     font-size: 45px;
   }
   .icon-trees{
-    bottom: 50px;
+    bottom: 100px;
+  }
+  .icon-ufo{
+    top: 50px;
   }
 }
