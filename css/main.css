@@ -172,6 +172,7 @@ img {
 .navbar{
   padding: 0;
   align-items: flex-start;
+  margin-bottom: 50px;
 }
 #mobile-bars {
   color: #fff;
@@ -212,6 +213,8 @@ img {
 }
 .header-content{
   position: relative;
+  /* margin-top: 300px; */
+    min-height: 430px;
 }
 .header-content-contanier{
   z-index: 2;
@@ -220,18 +223,20 @@ img {
 .border-box{
   position: absolute;
   width: 55%;
-  height: 70%;
+  height: 100%;
   border: 20px solid #000;
   background: transparent;
   right: 0;
-  bottom: -55px;
+  bottom: 50%;
+  transform: translateY(50%);
   z-index: 0;
 }
 .bg-content{
   position: absolute;
   width: 95%;
-  height: 53%;
-  bottom: 0;
+  height: 80%;
+  bottom: 50%;
+  transform: translateY(50%);
   left: 0;
   background: #fff;
   z-index: 1;
@@ -241,8 +246,10 @@ img {
 }
 .left-content{
   display: flex;
-  align-items: flex-end;
-  padding-bottom: 40px;
+  /* align-items: flex-end; */
+  align-items: center;
+  /* padding-bottom: 40px; */
+  padding-top: 40px;
 }
 .left-content h1{
   font-family: 'KBDunkTank';
@@ -256,8 +263,15 @@ img {
   display: block;
   color: #1d1d1d;
 }
+.right-content {
+  position: relative;
+}
 .right-content img{
   max-width: 525px;
+  width: 80%;
+  position: absolute;
+  bottom: 40px;
+  right: 0;
 }
 /* ============== Body Sections ============== */
 /* ============== What We Do ============== */
@@ -861,14 +875,15 @@ img {
   .navbar-expand-lg{
     align-items: flex-start;
     padding: 0;
+    margin-bottom: 200px;
   }
   .slider-item a{
     margin: 0 15px 15px;
   }
 }
 @media (max-width:992px){
-  .left-content{
-    padding-bottom: 4%;
+  .header{
+    padding-bottom: 100px;
   }
   .brands-board{
     max-width: 80%;
@@ -953,14 +968,22 @@ img {
   }
 }
 @media (max-width: 769px){
-  .left-content{
-    padding-bottom: 0px;
-  }
   .left-content h1{
     font-size: 90px;
   }
   .left-content h1 span{
     font-size: 30px;
+  }
+  .border-box{
+    height: 75%;
+  }
+  .bg-content{
+    height: 60%;
+    width: 93%;
+  }
+  .right-content img{
+    bottom: 20%;
+    width: 90%;
   }
   .left-form{
     max-width: 90%;
@@ -986,11 +1009,11 @@ img {
   #logo-svg {
     width: 200px;
   }
+  .navbar{
+    margin-bottom: 0;
+  }
   .wrap_menu{
     margin-top: 0px;
-  }
-  .border-box{
-    bottom: -30px;
   }
   .icon-ufo {
     top: -16px;
@@ -1005,6 +1028,27 @@ img {
   }
 }
 @media (max-width:575px){
+  .header{
+    padding-bottom: 50px;
+  }
+  .left-content h1{
+    font-size: 50px;
+  }
+  .left-content h1 span{
+    font-size: 20px;
+  }
+  .border-box{
+    height: 50%;
+    border-width: 10px;
+  }
+  .bg-content{
+    height: 40%;
+    /* width: 93%; */
+  }
+  .right-content img{
+    bottom: 30%;
+    width: 100%;
+  }
   .icon-trees{
     bottom: 50px;
   }
@@ -1025,6 +1069,12 @@ img {
   }
 }
 @media (max-width:420px){
+  .header{
+    padding-bottom: 0px;
+  }
+  .header-content{
+    min-height: 350px;
+  }
   .wwd-title .title-container{
     max-width: 325px;
     margin: 0 auto;
